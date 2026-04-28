@@ -82,7 +82,7 @@ All assessment activities are governed by the following federal standards, guide
 | FedRAMP Penetration Test Guidance | FedRAMP PMO | Penetration testing scope and methodology |
 | NIST SP 800-115 | Technical Guide to Information Security Testing and Assessment | Technical testing methodology |
 | NIST SP 800-30 Rev 1 | Guide for Conducting Risk Assessments | Risk scoring methodology |
-| FISMA 2014 (44 U.S.C. § 3551) | Federal Information Security Modernization Act | Legislative assessment mandate |
+| FISMA 2014 (44 U.S.C. Â§ 3551) | Federal Information Security Modernization Act | Legislative assessment mandate |
 | OMB Circular A-130 | Managing Information as a Strategic Resource | Federal information security requirements |
 
 ---
@@ -202,8 +202,8 @@ ClearPath Security Assessors LLC certifies that it has no organizational, financ
 | Dr. Sandra M. Okafor | System Owner | Executive sponsor of assessment, final artifact approvals |
 | Henry Kline | Authorizing Official | Receives assessment briefings, reviews preliminary SAR findings |
 | Marcus T. Brennan | SAISO | Oversight of assessment activities, FISMA compliance coordination |
-| [DevOps Lead Name] | Cloud Operations Lead | AWS GovCloud environment access, technical interview support, configuration evidence |
-| [Privacy Officer Name] | Privacy Officer | PT family control support, Privacy Impact Assessment coordination |
+| Trevor L. Abrams | Cloud Operations Lead | AWS GovCloud environment access, technical interview support, configuration evidence |
+| Dr. Angela M. Reeves | Privacy Officer | PT family control support, Privacy Impact Assessment coordination |
 
 ### 6.3 Roles of the Authorizing Official During Assessment
 
