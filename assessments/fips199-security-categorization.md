@@ -71,9 +71,9 @@ The categorization methodology applied in this document derives from the followi
 | NIST SP 800-60 Vol II | Appendices to SP 800-60 (Information Type Taxonomy) | Specific impact ratings by information type |
 | NIST SP 800-53 Rev 5 | Security and Privacy Controls for Information Systems and Organizations | Control baseline selection |
 | NIST SP 800-37 Rev 2 | Risk Management Framework for Information Systems and Organizations | RMF Step 1 (Categorize) |
-| FISMA 2014 (44 U.S.C. § 3551) | Federal Information Security Modernization Act | Legislative authority |
+| FISMA 2014 (44 U.S.C. Â§ 3551) | Federal Information Security Modernization Act | Legislative authority |
 | HIPAA 45 C.F.R. Parts 164 | Health Insurance Portability and Accountability Act Security Rule | PHI protection requirements |
-| Privacy Act of 1974 | 5 U.S.C. § 552a | PII protection requirements |
+| Privacy Act of 1974 | 5 U.S.C. Â§ 552a | PII protection requirements |
 | IRS Publication 1075 | Tax Information Security Guidelines | FTI protection requirements (HIGH baseline) |
 | OMB Circular A-130 | Managing Information as a Strategic Resource | Federal information governance |
 | FedRAMP Security Assessment Framework | FedRAMP High Baseline Controls | Cloud authorization requirements |
@@ -161,7 +161,7 @@ The information types below are identified using the NIST SP 800-60 Vol II taxon
 
 ### 5.1 Definition
 
-Confidentiality refers to preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information (44 U.S.C. § 3542).
+Confidentiality refers to preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information (44 U.S.C. Â§ 3542).
 
 ### 5.2 Potential Impact of Confidentiality Breach
 
@@ -169,12 +169,12 @@ A loss of confidentiality on CloudVault FHX would involve unauthorized disclosur
 
 **Potential consequences include:**
 
-- Criminal prosecution under HIPAA, the Privacy Act, and the Internal Revenue Code (IRC § 6103) for unauthorized disclosure of FTI
+- Criminal prosecution under HIPAA, the Privacy Act, and the Internal Revenue Code (IRC Â§ 6103) for unauthorized disclosure of FTI
 - Significant harm to individuals through identity theft, discrimination, financial fraud, or denial of benefits
 - Reputational damage to participating federal agencies and the federal government's health data infrastructure
 - Loss of public trust in federal electronic health record sharing programs
 - Congressional oversight, OIG investigation, and potential program shutdown
-- Substantial financial penalties: HIPAA civil monetary penalties up to $1.9 million per violation category per year, and potential criminal fines under IRC § 7213 for FTI misuse
+- Substantial financial penalties: HIPAA civil monetary penalties up to $1.9 million per violation category per year, and potential criminal fines under IRC Â§ 7213 for FTI misuse
 
 **Confidentiality Impact Level: HIGH**
 
@@ -186,7 +186,7 @@ This determination is consistent with NIST SP 800-60 Vol II provisional ratings 
 
 ### 6.1 Definition
 
-Integrity refers to guarding against improper information modification or destruction, including ensuring information non-repudiation and authenticity (44 U.S.C. § 3542).
+Integrity refers to guarding against improper information modification or destruction, including ensuring information non-repudiation and authenticity (44 U.S.C. Â§ 3542).
 
 ### 6.2 Potential Impact of Integrity Breach
 
@@ -211,7 +211,7 @@ The high-water mark across information types processed by the system consistentl
 
 ### 7.1 Definition
 
-Availability refers to ensuring timely and reliable access to and use of information (44 U.S.C. § 3542).
+Availability refers to ensuring timely and reliable access to and use of information (44 U.S.C. Â§ 3542).
 
 ### 7.2 Potential Impact of Availability Breach
 
@@ -276,7 +276,7 @@ A HIGH overall system impact level requires application of the **FedRAMP High** 
 
 Several factors collectively produce a HIGH impact rating that cannot reasonably be lowered:
 
-**Scale of sensitive data:** 890,000+ patient records representing PHI under HIPAA, PII under the Privacy Act, and FTI under IRC § 6103 create a large-scale exposure surface. A single breach event would likely constitute one of the largest federal health data incidents in history.
+**Scale of sensitive data:** 890,000+ patient records representing PHI under HIPAA, PII under the Privacy Act, and FTI under IRC Â§ 6103 create a large-scale exposure surface. A single breach event would likely constitute one of the largest federal health data incidents in history.
 
 **Legal mandates for HIGH protection:** IRS Publication 1075 independently mandates HIGH confidentiality and integrity for any system processing FTI. This alone would produce a HIGH rating regardless of other data types.
 
@@ -324,7 +324,7 @@ I have conducted a thorough analysis of all information types processed, stored,
 
 ### System Owner
 
-**Name:** [Federal Health Data Office System Owner]
+**Name:** Dr. Sandra M. Okafor
 **Title:** System Owner
 **Organization:** Federal Health Data Office (FHDO)
 
@@ -350,7 +350,7 @@ I have reviewed and approved the FIPS 199 Security Categorization for the CloudV
 
 ### Senior Agency Information Security Officer (SAISO) Concurrence
 
-**Name:** [SAISO Name]
+**Name:** Marcus T. Brennan
 **Title:** Senior Agency Information Security Officer
 **Organization:** Federal Health Data Office (FHDO)
 
