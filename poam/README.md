@@ -1,33 +1,90 @@
-# poam/ — Plan of Action and Milestones
+# poam/ -- Plan of Action and Milestones
 
 This folder contains the Plan of Action and Milestones (POA&M) package for the CloudVault Federal Health Exchange (FHX). The POA&M is a FISMA-mandated document that tracks every open security weakness identified during the authorization process and specifies who is responsible for fixing it, how it will be fixed, and by when.
 
-## Contents
+---
 
-| File | Description | Status |
-|---|---|---|
-| `poam-master-tracker.md` | Master POA&M tracker — all open findings with risk level, milestones, and responsible parties | In Progress |
-| `poam-template.md` | Blank POA&M template formatted to FedRAMP PMO specifications | In Progress |
-| `poam-closure-evidence-log.md` | Log of evidence submitted to close completed POA&M items | Planned |
-| `risk-acceptance-log.md` | Formal risk acceptance decisions for items not remediated — AO-signed | Planned |
+## POA&M Artifact Package
 
-## About the POA&M
+This folder provides the complete POA&M artifact package in three formats, mirroring real federal engagement practice where the same tracking data is maintained in multiple formats for different stakeholder audiences.
 
-The POA&M is one of the three documents — alongside the SSP and the SAR — that the Authorizing Official reviews when making the authorization decision. Under FedRAMP continuous monitoring requirements, the POA&M must be updated monthly and submitted to the FedRAMP PMO. Any POA&M item that is 90 days overdue without an approved extension becomes a compliance violation that can trigger suspension of the authorization.
+| File | Format | Description | Audience |
+|---|---|---|---|
+| [poam-master-tracker.md](./poam-master-tracker.md) | Markdown | Authoritative master tracker with full narrative context, compensating controls register, and milestone history | GitHub review, hiring managers, portfolio display |
+| [CV-FHX-POAM-Master-Tracker.xlsx](./CV-FHX-POAM-Master-Tracker.xlsx) | Excel Workbook | Structured spreadsheet tracker formatted for real-world ISSO and AO working sessions, sortable by risk level, due date, and system owner | AO briefings, ISSO daily tracking, ConMon reporting |
+| [CV-FHX-POAM-Master-Tracker (1).docx](./CV-FHX-POAM-Master-Tracker%20(1).docx) | Word Document | Formatted document version suitable for formal submission, printing, and inclusion in authorization packages | 3PAO review, agency reporting, formal ATO packages |
 
-### POA&M Risk Levels
-
-| Risk Level | CVSS Score Range | Maximum Remediation Window |
-|---|---|---|
-| **CRITICAL** | 9.0 – 10.0 | 30 days |
-| **HIGH** | 7.0 – 8.9 | 30 days |
-| **MODERATE** | 4.0 – 6.9 | 90 days |
-| **LOW** | 0.1 – 3.9 | 180 days |
-
-### Real-World Consequence of POA&M Non-Compliance
-
-If a CSP (Cloud Service Provider) fails to remediate HIGH or CRITICAL POA&M items within the required window, the FedRAMP PMO can issue a Notice of Deficiency. If the deficiency is not resolved, the authorization can be revoked — meaning all federal agencies using the system must immediately cease operations on it. For CloudVault FHX, serving 47 federal health agencies and 890,000+ patient records, that consequence would be catastrophic to mission continuity.
+> In a real federal engagement, the POA&M is typically maintained in a combination of a live spreadsheet (updated weekly by the ISSO), a formatted document (submitted monthly to the AO), and a system-of-record entry in a GRC tool such as Xacta 360, CSAM, or eMASS. This artifact package demonstrates proficiency across all three formats.
 
 ---
 
-*Part of the CloudVault FHX GRC Portfolio | cloudvault-fedramp-ato*
+## POA&M Summary (as of March 2026 Reporting Period)
+
+| Risk Level | Open Items | Overdue | Closed This Period |
+|---|---|---|---|
+| Critical | 1 | 0 | 0 |
+| High | 3 | 1 | 1 |
+| Moderate | 6 | 2 | 2 |
+| Low | 4 | 0 | 0 |
+| **Total** | **14** | **3** | **3** |
+
+**Overall Risk Posture:** ACCEPTABLE  
+**Next Scheduled Review:** April 30, 2026  
+**ISSO:** Enechi P.C. Njeze, CGRC, CISA, CISM  
+
+---
+
+## How to Read This POA&M
+
+Each POA&M item is identified by a unique tracking ID (format: CV-FHX-POAM-YYYY-NNN) and contains the following fields, consistent with FedRAMP POA&M requirements and NIST SP 800-53A Rev 5 guidance:
+
+- **POA&M ID:** Unique identifier for lifecycle tracking
+- **Finding Source:** Vulnerability scan, penetration test, self-assessment, or audit
+- **Control ID:** NIST SP 800-53 Rev 5 control family and control number
+- **Weakness Description:** Plain-language summary of the identified gap
+- **Risk Level:** Critical / High / Moderate / Low (aligned with FIPS 199 impact categories)
+- **Asset Affected:** Specific system component, boundary, or data flow
+- **Scheduled Completion Date:** Committed remediation milestone
+- **Responsible Individual:** Named federal or contractor POC accountable for remediation
+- **Status:** Open / In Progress / Closed / Risk Accepted / Compensating Control Applied
+- **Compensating Control:** Interim mitigation measure active while permanent fix is implemented
+
+---
+
+## Key POA&M Items (Selected High-Priority)
+
+| POA&M ID | Control | Weakness | Due Date | Status |
+|---|---|---|---|---|
+| CV-FHX-POAM-2026-001 | SI-2 | Critical unpatched CVEs on application servers | 2026-03-31 | In Progress |
+| CV-FHX-POAM-2026-002 | AC-2 | Orphaned privileged accounts from prior contractor engagement | 2026-04-15 | In Progress |
+| CV-FHX-POAM-2026-003 | SC-28 | S3 bucket encryption gap for legacy data migration objects | 2026-05-01 | In Progress |
+| CV-FHX-POAM-2026-004 | AU-9 | Audit log integrity controls not fully implemented | 2026-04-30 | In Progress |
+
+---
+
+## Related Documents
+
+- [POA&M Master Tracker (Markdown)](./poam-master-tracker.md) -- full detail with compensating controls
+- [ConMon Monthly Report (March 2026)](../conmon/conmon-monthly-report-template.md) -- monthly risk posture summary referencing this POA&M
+- [Security Assessment Plan](../assessments/security-assessment-plan.md) -- findings that originated POA&M items
+- [System Security Plan](../docs/system-security-plan.md) -- authoritative system description
+
+---
+
+## Regulatory and Policy Basis
+
+This POA&M package was developed in accordance with the following authorities:
+
+- FISMA (44 U.S.C. Chapter 35) -- mandates POA&M maintenance for all federal information systems
+- OMB Memorandum M-14-03 -- requires quarterly POA&M reporting to agency CIO
+- FedRAMP POA&M Template v3.1 -- format and field requirements for cloud systems
+- NIST SP 800-53 Rev 5, CA-5 -- Plan of Action and Milestones control requirement
+- NIST SP 800-37 Rev 2 -- RMF Step 4 (Assess) and Step 5 (Authorize) POA&M obligations
+- FedRAMP Continuous Monitoring Strategy Guide -- ConMon POA&M update cadence
+
+---
+
+*Maintained by Enechi P.C. Njeze, ISSO / ISSM, CloudVault FHX Program*  
+*CGRC | CISA | CISM | PMP | PMI-RMP | CompTIA Security+ SY0-701 | CHP | CSCS*  
+*Federal Health Data Office (FHDO) -- Cybersecurity Division*  
+*Last Updated: March 31, 2026*
